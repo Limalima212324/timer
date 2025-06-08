@@ -1,0 +1,147 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.relogio {
+  font-size: 3em;
+  /* aqui é pra aumentar a fonte do texto <p class="relogio">00:00:00</p> */
+/* }
+
+.pausado {
+  color: red;
+} */ 
+ /* Importa a fonte 'Open Sans' do Google Fonts, com pesos 400 (normal) e 700 (bold) */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Define variáveis globais para cores reutilizáveis */
+:root {
+  --primary-color: rgb(17, 86, 102);          /* Cor principal (azul esverdeado) */
+  --primary-color-darker: rgb(9, 48, 56);     /* Versão mais escura da cor principal */
+}
+
+/* Aplica a todos os elementos */
+* {
+  box-sizing: border-box; /* Inclui padding e borda dentro do tamanho total do elemento */
+  outline: 0;             /* Remove a borda de foco padrão dos inputs e botões */
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  margin: 0;                                 /* Remove margens padrão do navegador */
+  padding: 0;                                /* Remove preenchimento padrão */
+  background: var(--primary-color);          /* Cor de fundo usando a variável */
+  font-family: 'Open sans', sans-serif;      /* Fonte padrão para o texto */
+  font-size: 1.3em;                           /* Tamanho base da fonte */
+  line-height: 1.5em;                         /* Altura da linha (espaçamento vertical) */
+}
+
+/* Container centralizado com estilo de "cartão" */
+.container {
+  max-width: 640px;     /* Largura máxima do container */
+  margin: 50px auto;    /* Centraliza na horizontal e adiciona espaçamento em cima */
+  background: white;     /* Fundo branco */
+  padding: 30px;        /* Espaçamento interno */
+  border-radius: 10px;  /* Cantos arredondados */
+}
+
+/* Define que todos esses elementos do formulário ocuparão 100% da largura e terão espaçamento inferior */
+form input, form label, form button {
+  display: block;        /* Quebra linha para cada elemento */
+  width: 100%;           /* Ocupa toda a largura do container pai */
+  margin-bottom: 10px;   /* Espaço entre os campos */
+}
+
+/* Estilo dos inputs de texto */
+form input {
+  font-size: 24px;       /* Fonte grande para facilitar leitura */
+  height: 50px;          /* Altura fixa dos inputs */
+  padding: 0 20px;       /* Espaçamento interno à esquerda e direita */
+}
+
+/* Borda ao focar no input (clicar ou tabular) */
+form input:focus {
+  outline: 1px solid var(--primary-color);  /* Adiciona borda com a cor principal */
+}
+
+/* Estilo do botão */
+form button {
+  border: none;                           /* Remove borda padrão */
+  background: var(--primary-color);       /* Fundo com a cor principal */
+  color: #fff;                            /* Texto branco */
+  font-size: 18px;                        /* Tamanho da fonte */
+  font-weight: 700;                       /* Texto em negrito */
+  height: 50px;                           /* Altura fixa */
+  cursor: pointer;                        /* Muda o cursor para mãozinha */
+  margin-top: 30px;                       /* Espaço acima do botão */
+}
+
+/* Estilo do botão ao passar o mouse (hover) */
+form button:hover {
+  background: var(--primary-color-darker);  /* Fundo muda para a versão mais escura */
+}
+
+/* Estilo do parágrafo que exibe o relógio */
+.relogio {
+  font-size: 3em; /* Aumenta bastante o tamanho da fonte do relógio */
+  /* Exemplo: <p class="relogio">00:00:00</p> */
+}
+
+/* Estilo aplicado quando o relógio está pausado */
+.pausado {
+  color: red;  /* Muda a cor para vermelho, indicando que está pausado */
+}
