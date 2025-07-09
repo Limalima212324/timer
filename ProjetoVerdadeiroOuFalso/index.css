@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to right, #e4efdb, #95eb80);
+    /* ➡ Fundo degradê da esquerda (#ffecd2, um bege claro) para a direita (#fcb69f, um salmão) */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* Fonte divertida e casual */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centraliza todo o conteúdo da página horizontalmente e verticalmente */
+    height: 100vh; /* Altura total da viewport (tela) */
+    margin: 0; /* Remove margem padrão do body */
+}
+
+.jogo-container {
+    background-color: #abf9f7;
+    /* Fundo azul claro */
+    padding: 30px;  
+    /* Espaçamento interno de 30px ao redor do conteúdo */
+    border: 5px dotted #ffa07a;
+    /* Borda pontilhada cor salmão */
+    border-radius: 25px;
+    /* Cantos arredondados */
+    text-align: center;
+    /* Centraliza texto dentro do container */
+    width: 90%;
+    /* Ocupa 90% da largura do elemento pai */
+    max-width: 450px;
+    /* Máximo 450px para não ficar muito largo em telas grandes */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    /* Sombra suave ao redor */
+}
+
+/* Centraliza e alinha os botões "Verdadeiro" e "Falso" lado a lado */
+#botoes-resposta {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento de 10px entre os botões */
+    margin-bottom: 15px; /* Espaço abaixo dos botões */
+}
+
+h1 {
+    color: #c8351b; /* Cor tomate */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+button {
+    padding: 12px 24px;
+    /* Espaçamento interno vertical 12px, horizontal 24px */
+    margin: 10px; 
+    /* Margem externa em todos os lados */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    background-color: #ffb347;
+    /* Cor de fundo salmão claro */
+    border: none;
+    /* Sem borda */
+    border-radius: 12px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor muda para mãozinha ao passar o mouse */
+    transition: 0.3s;
+    /* Transição suave para efeitos hover */
+}
+
+button:hover {
+    background-color: #ffcc70;
+    /* Cor de fundo ao passar o mouse (hover) */
+}
+
+/* Estiliza o botão resetar para ficar centralizado abaixo dos botões de resposta */
+#resetar-btn {
+    display: block; /* Faz o botão ser um bloco (ocupa linha inteira) */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo do texto de feedback */
+#feedback-texto {
+    color: #cc3300;
+    /* Vermelho escuro */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilo do texto da pontuação */
+#score-texto {
+    font-weight: bold;
+}
